@@ -11,7 +11,7 @@ resource "azurerm_virtual_network" "nw" {
   name                = "network-${random_id.server.hex}"
   address_space       = ["10.0.0.0/16"]
   location            = "${azurerm_resource_group.rg.location}"
-  resource_group_name = "${azurerm_resource_group.rg.name"}
+  resource_group_name = "${azurerm_resource_group.rg.name}"
 }
 
 resource "azurerm_subnet" "sbnt" {
